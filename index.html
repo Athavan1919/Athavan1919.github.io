@@ -27,60 +27,68 @@
                 <p>Please fill out the following survey to evaluate the YouTube website</p>
                 <hr>
                 
-                <label class="question">What stands out to you in this website?</label><br>
-                <input type="text" name="appeal"><br>
+                <div class=question>
+                    <label class="problem">What stands out to you in this website?</label><br>
+                    <input type="text" name="appeal"><br>
+                </div>        
             
                 <br>
             
-                <label class="question">I enjoy the layout of this website:</label><br>
-                <input type="radio" id="yes" name="layout" value="yes">
-                <label for="yes">Yes</label><br>
-                <input type="radio" id="no" name="layout" value="no">
-                <label for="no">No</label><br>
+                <div class="question"> 
+                    <label class="problem">I enjoy the layout of this website:</label><br>
+                    <input type="radio" id="yes" name="layout" value="yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="layout" value="no">
+                    <label for="no">No</label><br>
             
-                <br>
+                    <br>
+                </div>    
             
-                <label class="question">The website has a simple and clear presentation view:</label>
-                <select name="presentation" id="view">
-                    <option value="simple">Simple</option>
-                    <option value="clear">Clear</option>
-                    <option value="both">Both</option>
-                </select><br>
+                <div class="question">
+                    <label class="problem">The website has a simple and clear presentation view:</label>
+                    <select name="presentation" id="view">
+                        <option value="simple">Simple</option>
+                        <option value="clear">Clear</option>
+                        <option value="both">Both</option>
+                    </select><br>
+                    <br>
+                </div>
                 
+                <div class=question>
+                    <label class="problem">What makes this website attractive? (check all that applies)</label><br>
+                    <input type="checkbox" id="attractive1" name="attractive-1" value="color">
+                    <label for="attractive1">Color</label>
+                    <input type="checkbox" id="attractive2" name="attractive-2" value="font">
+                    <label for="attractive2">Icons</label>
+                    <input type="checkbox" id="attractive3" name="attractive-3" value="pictures">
+                    <label for="attractive3">Pictures</label>
+                    <input type="checkbox" id="attractive4" name="attractive-4" value="organization">
+                    <label for="attractive4">Organization of Content</label>                
                 <br>
+                </div>
                 
-                <label class="question">What makes this website attractive? (check all that applies)</label><br>
-                <input type="checkbox" id="attractive1" name="attractive-1" value="color">
-                <label for="attractive1">Color</label>
-                <input type="checkbox" id="attractive2" name="attractive-2" value="font">
-                <label for="attractive2">Icons</label>
-                <input type="checkbox" id="attractive3" name="attractive-3" value="pictures">
-                <label for="attractive3">Pictures</label>
-                <input type="checkbox" id="attractive4" name="attractive-4" value="organization">
-                <label for="attractive4">Organization of Content</label>
+                <div class="question">
+                    <label class="problem">Do you enjoy using the website?</label><br>
+                    <label>Strongly Disagree</label>
+                    <input type="radio" id="1" name="enjoy" value="1">
+                    <label for="1">1</label>
+                    <input type="radio" id="2" name="enjoy" value="2">
+                    <label for="2">2</label>
+                    <input type="radio" id="3" name="enjoy" value="3">    
+                    <label for="3">3</label>
+                    <input type="radio" id="4" name="enjoy" value="4">            
+                    <label for="4">4</label>
+                    <input type="radio" id="5" name="enjoy" value="5">                
+                    <label for="5">5</label>
+                    <label>Strongly Agree</label><br>
+                    <br>
+                </div>    
                 
-                <br>
-                
-                <label class="question">Do you enjoy using the website?</label><br>
-                <label>Strongly Disagree</label>
-                <input type="radio" id="1" name="enjoy" value="1">
-                <label for="1">1</label>
-                <input type="radio" id="2" name="enjoy" value="2">
-                <label for="2">2</label>
-                <input type="radio" id="3" name="enjoy" value="3">    
-                <label for="3">3</label>
-                <input type="radio" id="4" name="enjoy" value="4">            
-                <label for="4">4</label>
-                <input type="radio" id="5" name="enjoy" value="5">                
-                <label for="5">5</label>
-                <label>Strongly Agree</label><br>
-                
-                <br>
-                
-                <label class="question">Any suggestions to improve the User Interface?</label><br>
-                <textarea rows="4" cols="50" name="comment" form="survey" placeholder="Comment..."></textarea><br>
-                
-                <br>
+                <div class="question">
+                    <label class="problem">Any suggestions to improve the User Interface?</label><br>
+                    <textarea rows="4" cols="50" name="comment" form="survey" placeholder="Comment..."></textarea><br>
+                    <br>
+                </div>
                 
                 <button id="submit" type=button>Submit</button>
                 <p id="signature" style="text-align:right">Website created by Athavan Jeevakumar</p>	

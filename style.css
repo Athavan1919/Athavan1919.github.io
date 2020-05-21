@@ -185,6 +185,10 @@ hr {
 }
 
 .question{
+    font-family: Effra,Helvetica,Arial,sans-serif;
+}
+
+.problem{
     font-weight: bold;
 }
 
