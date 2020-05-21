@@ -186,6 +186,8 @@ hr {
 
 .question{
     font-family: Effra,Helvetica,Arial,sans-serif;
+    border: 2px solid black;
+    box-sizing: border-box;
 }
 
 .problem{
