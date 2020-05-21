@@ -188,6 +188,7 @@ hr {
     font-family: Effra,Helvetica,Arial,sans-serif;
     border: 2px solid black;
     box-sizing: border-box;
+    padding: 20px;
 }
 
 .problem{
