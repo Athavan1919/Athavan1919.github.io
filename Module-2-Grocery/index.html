@@ -3,9 +3,13 @@
 <head>
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Grocery Store</title>
 </head>
 
 <body>
+<header>
+    <h1 style="text-align:center">ATHAVAN'S ONLINE GROCERY STORE</h1>
+</header>    
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
@@ -19,12 +23,16 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct', 'organicSelect')">
 	<option value=""></option>
 	<option value="Vegetarian">Vegetarian</option>
     <option value="GlutenFree">GlutenFree</option>
+    <option value="Both">Both</option>    
     <option value="None">None</option>
-	</select>
+	</select><br>
+    <br>
+    Do you perfer organic foods?
+    <input type=checkbox id="organicSelect" name=organicSelect onclick="populateListProductChoices('dietSelect', 'displayProduct', 'organicSelect')">
 </div>
 
 <div id="Products" class="tabcontent">
@@ -42,6 +50,9 @@
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>
+    
+<p id="signature" style="text-align:right">Website created by Athavan Jeevakumar</p>	
+    
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>

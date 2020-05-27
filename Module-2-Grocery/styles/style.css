@@ -1,4 +1,22 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+h1{
+    font-family: "Palatino Linotype";
+    letter-spacing: 3px;
+}
+
+h3{
+    font-family: "Palatino Linotype";
+    color: crimson;
+}
+
+header{
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+body{
+    margin: 0;
+}
 
 /* Style the tab */
 .tab {
@@ -34,4 +52,9 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  background-color: skyblue;
+}
+
+#signature{
+    font-style: italic;
 }
