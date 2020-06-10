@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>        
+    
+    <title>Barber Shop</title>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <img src="images/barber.png" width="65px" height="65px">
+            <h1 class="display-4">OTTAWA'S FINEST</h1>
+        </div>
+    </header>
+    <div class="services">
+        <br>
+        <h2 style="text-align:center" class="container bg-primary rounded-pill">SERVICES</h2>
+        <br>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col">Fade</div>
+            <div class="col">Short Cut</div>
+            <div class="col">Youth Trim</div>
+        </div>            
+        <div class="row">
+            <div class="col"><img src="images/fade.png" height="180" width="180"></div>
+            <div class="col"><img src="images/short.png" height="180" width="180"></div>
+            <div class="col"><img src="images/youth.png" height="180" width="180"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey">Book Now</button></div>
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey">Book Now</button></div>
+            <div class="col" data-toggle="modal" data-target="#bookSurvey"><button type="button" class="btn btn-success">Book Now</button></div>            
+        </div>
+            
+        <div class="modal fade" id="bookSurvey" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h2 style="color:black; text-align:center;">Make an Appointment</h2>
+                            <p>Fill out the following form</p>
+                            <div class="form-group row">
+                                <label for="name" class="col-2 col-form-label">Name</label>
+                                <div class="col-10">
+                                    <input class="form-control" id="name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone" class="col-2 col-form-label">Phone</label>
+                                <div class="col-10">
+                                    <input class="form-control" id="phone">
+                                </div>
+                            </div>    
+                            <div class="form-group row">
+                                <label for="dateTimeInput" class="col-2 col-form-label">Date</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="datetime-local" value="2020-06-01T13:45:00" id="dateTimeInput">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+            
+        <br>
+            
+        <div class="row">
+            <div class="col">Beard Lineup</div>
+            <div class="col">Buzz Cut</div>
+            <div class="col">Mohawk</div>
+        </div>            
+        <div class="row">
+            <div class="col"><img src="images/beard%20lineup.png" height="180" width="180"></div>
+            <div class="col"><img src="images/buzz.png" height="180" width="180"></div>
+            <div class="col"><img src="images/mohawk.png" height="180" width="180"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey">Book Now</button></div>
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey">Book Now</button></div>
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey">Book Now</button></div>            
+        </div>            
+            
+        </div>            
+    </div>
+    
+    <br>
+    
+    <div class="team">
+        <h2 style="text-align:center" class="container bg-primary rounded-pill">TEAM</h2>
+        <br>
+        <div class="container-fluid">            
+                        
+            <div id="cards" class="row">
+                <div class="col">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/jamal.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Jamal</h4>
+                            <a href="#profile1" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                            <div id="profile1" class="collapse p-3">
+                                <p>8 years of experience</p>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>    
+                <div class="col">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/adam.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Adam</h4>
+                            <a href="#profile2" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                            <div id="profile2" class="collapse p-3">
+                                <p>1 year of experience</p>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/kobe.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Kobe</h4>
+                            <a href="#profile3" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                            <div id="profile3" class="collapse p-3">
+                                <p>6 years of experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:200px" >
+                        <img class="card-img-top" src="images/michael.png" height="243">
+                        <div class="card-body">
+                            <h4 class="card-title">Michael</h4>
+                            <a href="#profile4" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                            <div id="profile4" class="collapse p-3">
+                                <p>13 years of experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+        </div>
+    </div>
+    
+    <br>
+    
+    <div class="about-us">
+        <h2 style="text-align:center" class="container bg-primary rounded-pill">WHERE TO FIND US?</h2>
+        <div class="information">
+            <p><b>Location:</b> 1234 Sparks St. Greely, ON</p>
+            <p><b>Phone:</b> 613-424-7684</p>
+        </div>
+    </div>
+    
+</body>
