@@ -56,7 +56,6 @@ $(document).ready(function(){
     //card cvv validation
     $("#card-cvv").change(function(){
         var digit = $("#card-cvv").val();
-        alert(digit);
         var properDigit = new RegExp('^[0-9]{3}$');
         if(properDigit.test(digit)){
             $(".cvv-invalid-feedback").hide();
