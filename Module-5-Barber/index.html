@@ -1,0 +1,277 @@
+<!-- Image Sources: -->
+<!-- fade.png taken from https://therighthairstyles.com/high-fade-haircuts/ -->
+<!-- short.png taken from https://www.menshairstylestoday.com/cool-short-haircuts-and-hairstyles-for-men/ -->
+<!-- youth.png taken from https://www.menshairstylesnow.com/boys-haircuts/ -->
+<!-- beard%20lineup.png taken from https://www.pinterest.ca/pin/353391901998348128/ -->
+<!-- buzz.png taken from https://www.menshairstylestoday.com/buzz-cut/ -->
+<!-- mohawk.png taken from https://www.menshairstylesnow.com/popular-haircuts-for-men/ -->
+<!-- jamal.png taken from https://www.needpix.com/photo/1215795/black-avatar-cute -->
+<!-- adam.png taken from https://www.dreamstime.com/illustration/barber-shop.html -->
+<!-- kobe.png taken from https://www.123rf.com/clipart-vector/black_man.html -->
+<!-- michael.png taken from http://clipart-library.com/male-cliparts.html -->
+
+<!--References-->
+<!-- Datepicker based on drop down list based on https://stackoverflow.com/questions/38589644/show-only-days-in-jquery-datepicker-based-on-dropdown-value-->
+
+
+<!DOCTYPE html>
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>        
+    <script src="https://kit.fontawesome.com/d9cba8bb32.js"></script>
+    
+    <!-- For jQuery calendar -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/services.js"></script>
+
+    <title>Barber Shop</title>
+</head>
+
+<body>
+    <header>
+        <div id="heading">
+            <ul>
+                <li><a href="#services"><i class="fa fa-scissors"></i> Services</a></li>
+                <li><a href="#team"><i class="fa fa-users"></i> Team</a></li>
+                <li><a href="#payment"><i class="fa fa-credit-card-alt"></i> Payment</a></li>
+                <li><a href="#about-us"><i class="fa fa-user"></i> About Us</a></li>
+
+            </ul>
+            <img src="images/barber.png" width="65px" height="65px">
+            <h1 class="display-4">OTTAWA'S FINEST</h1>
+        </div>
+    </header>
+    <div id="services">
+        <br>
+        <h2 style="text-align:center" class="container bg-primary rounded-pill">SERVICES</h2>
+        <br>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col">Fade <b>$15</b></div>
+            <div class="col">Short Cut <b>$12</b></div>
+            <div class="col">Youth Trim <b>$10</b></div>
+        </div>            
+        <div class="row">
+            <div class="col"><img src="images/fade.png" height="180" width="180"></div>
+            <div class="col"><img src="images/short.png" height="180" width="180"></div>
+            <div class="col"><img src="images/youth.png" height="180" width="180"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey"><i class="fa fa-hand-o-up"></i> Book Now</button></div>
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey"><i class="fa fa-hand-o-up"></i> Book Now</button></div>
+            <div class="col" data-toggle="modal" data-target="#bookSurvey"><button type="button" class="btn btn-success"><i class="fa fa-hand-o-up"></i> Book Now</button></div>            
+        </div>
+            
+        <br>
+            
+        <div class="row">
+            <div class="col">Beard Lineup <b>$15</b></div>
+            <div class="col">Buzz Cut <b>$13</b></div>
+            <div class="col">Mohawk <b>$20</b></div>
+        </div>            
+        <div class="row">
+            <div class="col"><img src="images/beard%20lineup.png" height="180" width="180"></div>
+            <div class="col"><img src="images/buzz.png" height="180" width="180"></div>
+            <div class="col"><img src="images/mohawk.png" height="180" width="180"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey"><i class="fa fa-hand-o-up"></i> Book Now</button></div>
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey"><i class="fa fa-hand-o-up"></i> Book Now</button></div>
+            <div class="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookSurvey"><i class="fa fa-hand-o-up"></i> Book Now</button></div>            
+        </div> 
+            
+
+        <div class="modal fade" id="bookSurvey" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h2 style="color:black; text-align:center;">Make an Appointment</h2>
+                            <p>Fill out the following form</p>
+                            <div class="form-group row">
+                                <label for="name" class="col-2 col-form-label">Name</label>
+                                <div class="col-10">
+                                    <input class="form-control" id="name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone" class="col-2 col-form-label">Phone</label>
+                                <div class="col-10">
+                                    <input type="text" class="form-control" id="phone">
+                                    <div class="phone-invalid-feedback">Please enter a valid phone number XXX-XXX-XXXX</div>
+                                    <div class="phone-valid-feedback">Valid phone number</div>                                    
+                                </div>
+                            </div>    
+                            <div class="form-group row">
+                                <label for="dateInput" class="col-2 col-form-label">Date</label>
+                                <div class="col-10">
+                                    <!--input class="form-control" type="datetime-local" value="2020-06-01T13:45:00" id="dateTimeInput"-->
+                                    <input class="form-control" type="text" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="dateTimeInput" class="col-2 col-form-label">Barber</label>
+                                <div class="col-10">
+                                    <select class="form-control" id="barberList" onchange="test()">
+                                        <option>Choose a barber</option>
+                                        <option value="5">Jamal</option>
+                                        <option value="4">Adam</option>
+                                        <option value="1">Kobe</option>
+                                        <option value="2">Michael</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col text-center">
+                                    <button class="btn btn-primary">Confirm</button>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+                        
+            
+            
+        </div>            
+    </div>
+    
+    <br>
+    
+    <div id="team">
+        <h2 style="text-align:center" class="container bg-primary rounded-pill">TEAM</h2>
+        <br>
+        <div class="container-fluid">            
+                        
+            <div id="cards" class="row">
+                <div class="col">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/jamal.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Jamal</h4>
+                            <a href="#profile1" class="btn btn-primary" data-toggle="collapse" title="Look at me!">See Profile</a>
+                            <div id="profile1" class="collapse p-3">
+                                <ul>
+                                    <li>8 years of experience</li>
+                                    <li>Not available on Friday</li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>    
+                <div class="col">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/adam.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Adam</h4>
+                            <a href="#profile2" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                            <div id="profile2" class="collapse p-3">
+                                <ul>
+                                    <li>1 year of experience</li>
+                                    <li>Not available on Thursday</li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/kobe.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Kobe</h4>
+                            <a href="#profile3" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                            <div id="profile3" class="collapse p-3">
+                                <ul>
+                                    <li>6 years of experience</li>
+                                    <li>Not available on Monday</li>
+                                </ul>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:200px" >
+                        <img class="card-img-top" src="images/michael.png" height="243">
+                        <div class="card-body">
+                            <h4 class="card-title">Michael</h4>
+                            <a href="#profile4" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                            <div id="profile4" class="collapse p-3">
+                                <ul>
+                                    <li>13 years of experience</li>
+                                    <li>Not available on Tuesday</li>
+                                </ul>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+        </div>
+    </div>
+    
+    <br>
+    
+    <div id="payment">
+        <h2 style="text-align:center" class="container bg-primary rounded-pill">PAYMENT</h2>
+        <div class="card-information">
+            <div id="payment-row-1" class="row">
+                <div class="col">
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" class="form-control" id="card-name">
+                    <small class="text-muted">Full name as displayed on card</small>
+                </div>
+                <div class="col">
+                    <label for="card-number">Credit Card Number</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="card-number">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="card-icon">
+                                <i class="fa fa-credit-card"></i>
+                            </span>
+                        </div>
+                        <div class="number-invalid-feedback">Please enter a card number with the format XXXX-XXXX-XXXX-XXXX</div>
+                        <div class="number-valid-feedback">Valid card number</div>
+                    </div>    
+                </div>
+                <div class="col">
+                    <label for="card-expiration">Expiration</label>
+                    <input type="text" class="form-control" id="card-expiration">
+                </div>
+                <div class="col" id="cvv">
+                    <label for="card-cvv">CVV</label>
+                    <input type="text" class="form-control" id="card-cvv">
+                    <div class="cvv-invalid-feedback">Please enter a 3 digit cvv</div>
+                    <div class="cvv-valid-feedback">Valid CVV</div>
+                </div>
+            </div>
+            <br>
+            <div id="payment-row-2" class="row">
+                <button id="pay-now" type="button" class="btn btn-primary">Pay Now</button>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    
+    <div id="about-us">
+        <h2 style="text-align:center" class="container bg-primary rounded-pill">WHERE TO FIND US?</h2>
+        <div class="information">
+            <p><b>Location:</b> 1234 Sparks St. Greely, ON</p>
+            <p><b>Phone:</b> 613-424-7684</p>
+            <p><b>Open:</b> From Monday to Friday</p>
+        </div>
+    </div>
+    
+</body>

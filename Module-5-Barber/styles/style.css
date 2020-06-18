@@ -1,0 +1,163 @@
+#heading ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+h1{
+    font-family: SB Heading,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    display:inline-block;
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.phone-valid-feedback{
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #28a745;
+}
+
+.phone-invalid-feedback{
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+body{
+    margin: 0;
+}
+
+.valid-feedback-border{
+    border: 2px solid #28a745;
+}
+
+.valid-feedback-border-icon{
+    border: 2px solid #28a745;
+    border-left: none;
+}
+
+.invalid-feedback-border{
+    border: 2px solid #dc3545;
+}
+
+.invalid-feedback-border-icon{
+    border: 2px solid #dc3545;
+    border-left: none;
+}
+
+.number-valid-feedback{
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #28a745;
+}
+
+.number-invalid-feedback{
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.cvv-valid-feedback{
+    padding-right: 140px;
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #28a745;
+}
+
+.cvv-invalid-feedback{
+    padding-right: 140px;
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+#heading{
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+}
+
+#heading img{
+    float: left;
+}
+
+#services img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;    
+}
+
+.row{
+    text-align: center;
+}
+
+.row button{
+    font-size: 12px;
+}
+
+.card-body{
+    background-color: #cfb038;
+}
+
+#cards{
+    padding-left: 80px;
+}
+
+#payment-row-1{
+    padding-left: 50px;
+}
+
+label[for=card-expiration]{
+    padding-right: 20px;
+}
+
+#card-expiration{
+    width: 90%;
+}
+
+label[for=card-cvv]{
+    padding-right: 130px;
+}
+
+#card-cvv{
+    width: 50%;
+}
+
+#pay-now{
+    margin-left: 600px;
+}
+
+.information{
+    padding-left: 80px;
+}
