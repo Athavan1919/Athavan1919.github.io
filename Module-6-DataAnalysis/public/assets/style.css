@@ -1,0 +1,124 @@
+
+h1{
+    font-family: Effra,Helvetica,Arial,sans-serif;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 9px;
+}
+
+h2{
+    font-family: Effra,Helvetica,Arial,sans-serif;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 9px;
+}
+
+header{
+    text-align:center;
+    padding: 30px;
+    background-color: black;
+}
+
+body{
+    margin:0;
+}
+
+p{
+    font-family: Effra,Helvetica,Arial,sans-serif;
+}
+
+a{
+    font-family: Effra,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 450;
+}
+
+a:hover{
+    color:#368bd6
+}
+
+select{
+    font-family: Effra,Helvetica,Arial,sans-serif;
+}
+
+select{
+    outline-width: 0;
+}
+
+label{
+    font-family: Effra,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+}
+
+input[type=text]{
+    width: 35%;
+    border: 2px solid grey;
+}
+
+input[type=text]:focus{
+    outline-width: 0;
+    background-color: #ddd;
+}
+
+/*Styling drop down list*/
+#view{
+    width:10em;
+    height: 2em;
+    overflow: hidden;
+    font-family: Effra,Helvetica,Arial,sans-serif;
+}
+
+textarea{
+    width: 35%;
+    border: 2px solid grey;
+}
+
+textarea:focus{
+    outline-width: 0;
+    background-color: #ddd;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.site{
+    text-align: center;
+}
+
+
+.UI-survey{
+    border-radius: 5px;
+    background-color: #03fc96;
+    padding: 20px;
+}
+
+.question{
+    font-family: Effra,Helvetica,Arial,sans-serif;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.problem{
+    font-weight: bold;
+}
+
+#submit{
+    padding: .5rem 1.4rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+}
+
+#success-message{
+    display: none;
+}
+
+#signature{
+    font-style: italic;
+}
