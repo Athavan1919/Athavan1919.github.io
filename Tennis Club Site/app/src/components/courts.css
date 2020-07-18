@@ -1,0 +1,24 @@
+.courts-image-1{
+    padding-left: 50px;  
+}
+
+.courts-image-1 img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;    
+}
+
+.courts-image-2{
+    padding-left: 50px;   
+}
+
+.courts-image-2 img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;    
+}
+
+img{
+    height: 180px;
+    width: 180px;
+}
